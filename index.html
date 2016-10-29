@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Externals Start -->
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Externals End -->
+    <!-- Own Start -->
+    <!--Modules Start -->
+    <script type="text/javascript" src="app/BaseChange/Training/training.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <!-- Modules End -->
+    <!-- CSS Start -->
+    <link href="style/style.css" rel="stylesheet">
+    <!-- CSS End -->
+    <!-- Own End -->
+</head>
+
+<body ng-app="SimpleITSystemsApp">
+    <div class="container">
+        <h1 id="app-name">Simple IT Systems App</h1>
+        <div ng-view>
+        </div>
+    </div>
+</body>
+
+</html>

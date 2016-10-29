@@ -1,0 +1,16 @@
+<div>
+    <h2>Base Change Training</h2>
+    <table class="table table-striped">
+        <tr>
+            <td>Decimal</td>
+            <td>Hexadecimal</td>
+            <td>Binary</td>
+        </tr>
+        <tr ng-repeat="exercise in BCTraining.practiceArray" ng-class="[BCTraining.answerStatus[exercise.status]]">
+            <td >{{exercise.decimal}}</td>
+            <td><input class="form-control" type="text" ng-model="exercise.hexadecimalAnswer"></td>
+            <td><input class="form-control" type="text" ng-model="exercise.binaryAnswer"></td>
+        </tr>
+    </table>
+    <button ng-click="BCTraining.checkAnswers()" class="btn btn-primary">Check!</button>
+</div>

@@ -1,0 +1,31 @@
+{
+  "name": "number-base-change-training",
+  "version": "0.1.0",
+  "description": "Training for base changes. Currently planed BIN<->DEC<->HEX<->OCT",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlickNutter/NumberBaseChangeTraining.git"
+  },
+  "keywords": [
+    "angular",
+    "school",
+    "training"
+  ],
+  "author": "Miguel Hesse Meana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SlickNutter/NumberBaseChangeTraining/issues"
+  },
+  "homepage": "https://github.com/SlickNutter/NumberBaseChangeTraining#readme"
+}
