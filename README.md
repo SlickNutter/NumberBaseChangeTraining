@@ -3,10 +3,10 @@ This simple program is meant to serve as a support to those taking the class "Si
 
 Current features:
 - Decimal to Hex/Bin training
+- Hex/Bin to Decimal
 
 
 Planed features:
-- Hex/Bin to Decimal
 - An explanatory page where a number is transformed from base 10 to base 16 and back, with the transformation between the bases 16 and 2 also ilustrated.
 - A basic explanation of how bases and their transformations work in theory.
 - An introduction to the properties of natural/whole numbers.
