@@ -7,10 +7,16 @@
             <td>Binary</td>
         </tr>
         <tr ng-repeat="exercise in BCTraining.practiceArray" ng-class="[BCTraining.answerStatus[exercise.status]]">
-            <td >{{exercise.decimal}}</td>
-            <td><input class="form-control" type="text" ng-model="exercise.hexadecimalAnswer"></td>
-            <td><input class="form-control" type="text" ng-model="exercise.binaryAnswer"></td>
+            <td><input class="form-control" type="text" ng-model="exercise.decimalAnswer" ng-disabled="BCTraining.disable('decimal')"></td>
+            <td><input class="form-control" type="text" ng-model="exercise.hexadecimalAnswer" ng-disabled="BCTraining.disable('hexadecimal')"></td>
+            <td><input class="form-control" type="text" ng-model="exercise.binaryAnswer" ng-disabled="BCTraining.disable('binary')"></td>
         </tr>
     </table>
-    <button ng-click="BCTraining.checkAnswers()" class="btn btn-primary">Check!</button>
+    <button ng-click="BCTraining.checkAnswers()" class="btn btn-primary pull-right">Check!</button>
+    <select name="practiceType" ng-model="BCTraining.current">
+        <option value="decimal">Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+        <option value="binary">Binary</option>
+    </select>
+    <button ng-click="BCTraining.createPracticeArray()" class="btn btn-primary pull-right">Reload</button>
 </div>
