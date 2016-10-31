@@ -46,7 +46,7 @@ angular.module('BaseChangeTraining', [])
         controller.answerStatus = {
             unanswered: '',
             correct: 'success',
-            wrong: 'warning'
+            wrong: 'danger'
         };
         controller.disable = function (base) {
             console.log(controller.known, base);
